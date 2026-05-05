@@ -22,8 +22,8 @@ _This work is based on the DramaSystem SRD (found at http://www.pelgranepress.co
 
 Первое — указать оригинальную форму атрибуции, предусмотренную _DramaSystem SRD_:
 
-_This work is based on the DramaSystem SRD (found at http://www.pelgranepress.com/?p=12485), a product of Robin D. Laws and Pelgrane Press, developed, written, and edited by Robin D., and licensed for our use under the Creative Commons Attribution 3.0 Unported license ([http://creativecommons.org/licenses/by/3.0/](http://creativecommons.org/licenses/by/3.0/))._
-
+> _This work is based on the DramaSystem SRD (found at http://www.pelgranepress.com/?p=12485), a product of Robin D. Laws and Pelgrane Press, developed, written, and edited by Robin D., and licensed for our use under the Creative Commons Attribution 3.0 Unported license ([http://creativecommons.org/licenses/by/3.0/](http://creativecommons.org/licenses/by/3.0/))._
+> 
 Второе — указать моё имя как переводчика правил на русский язык:
 
 > _Перевод правил на русский язык: Александр «Вагрант» Семыкин_
