@@ -1,4 +1,4 @@
-# Основы правил DramaSystem
+# DramaSystem: основы правил
 
 **Автор правил DramaSystem**: Робин Д. Лоуз при поддержке издательства _Pelgrane Press_.
 
