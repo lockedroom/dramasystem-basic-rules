@@ -1,0 +1,48 @@
+{%- comment -%}
+  Иконка сайта. Источник — assets/images/dialogue.svg, растры собраны из
+  него же. Во вкладке глиф без подложки, на ярлыке телефона — на плашке
+  (dialogue-fill.svg).
+  favicon.ico лежит в корне: некоторые браузеры и агрегаторы запрашивают его
+  по фиксированному адресу, не читая теги ниже.
+{%- endcomment -%}
+<link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="icon" href="{{ '/assets/images/favicon-32.png' | relative_url }}" type="image/png" sizes="32x32">
+<link rel="icon" href="{{ '/assets/images/favicon-192.png' | relative_url }}" type="image/png" sizes="192x192">
+<link rel="alternate icon" href="{{ '/favicon.ico' | relative_url }}" sizes="16x16 32x32 48x48">
+<link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+<meta name="theme-color" content="#f5f1e8">
+
+{%- comment -%}
+  Русский язык в поиске.
+
+  Штатный lunr обрезает токены регулярным выражением \W, которое в JavaScript
+  означает «не [A-Za-z0-9_]». Кириллическое слово целиком считается мусором и
+  превращается в пустую строку — поэтому русские запросы не находили ничего.
+
+  Плагин lunr-languages добавляет русский триммер, стеммер и стоп-слова.
+  Подключить его штатными средствами темы нельзя: just-the-docs вызывает
+  lunr() без this.use(), поэтому глобальный lunr оборачивается ниже.
+  Обёртка выполняется до DOMContentLoaded, а индекс строится после — успеваем.
+{%- endcomment -%}
+{%- if site.search_enabled != false %}
+<script src="{{ '/assets/js/vendor/lunr.stemmer.support.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/vendor/lunr.ru.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/vendor/lunr.multi.js' | relative_url }}"></script>
+<script>
+  (function () {
+    var base = window.lunr;
+    if (!base || typeof base.multiLanguage !== 'function') {
+      console.warn('lunr-languages не загрузился, поиск останется англоязычным');
+      return;
+    }
+    var wrapped = function (config) {
+      return base(function () {
+        this.use(base.multiLanguage('en', 'ru'));
+        config.call(this);
+      });
+    };
+    Object.keys(base).forEach(function (key) { wrapped[key] = base[key]; });
+    window.lunr = wrapped;
+  })();
+</script>
+{%- endif %}

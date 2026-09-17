@@ -1,8 +1,16 @@
 ---
-type:
+layout: default
+title: "Главная"
+nav_order: 0
+permalink: "/"
 ---
 
 # DramaSystem: основы правил
+
+Система правил для игры в телевизионную драму.
+{:.fs-6.fw-300 }
+
+## Об этом руководстве
 
 Перед вами — перевод основных правил системы _DramaSystem_, на основе которой созданы игры _Hillfolk_ и _Malandros_.
 
@@ -18,8 +26,19 @@ type:
 
 Однако если идеи _DramaSystem_ покажутся вам интересными, я горячо рекомендую _Hillfolk_ как следующий шаг в их изучении. Это замечательная книга, главная ценность которой — в руководстве для ведущего и конкретных техниках для проведения драматических игр.
 
+## О переводчике
+
+Меня зовут _Александр Семыкин_, а в ролевом сообществе я известен под ником _Вагрант_. Я люблю ролевые игры и часто пишу о них в блоге [lockedroom.blog](https://lockedroom.blog/) и телеграм-канале [«Запертая комната»](https://t.me/lockedroom).
+
 ## Лицензия
 
 Настоящее руководство основано на документе _DramaSystem SRD_, распространяемом издательством _Pelgrane Press_ на условиях лицензии _Creative Commons Attribution 3.0 Unported_.
 
 _This work is based on the DramaSystem SRD (found at http://www.pelgranepress.com/?p=12485), a product of Robin D. Laws and Pelgrane Press, developed, written, and edited by Robin D. Laws, and licensed for our use under the Creative Commons Attribution 3.0 Unported license ([http://creativecommons.org/licenses/by/3.0/](http://creativecommons.org/licenses/by/3.0/))._
+
+### Условия распространения
+
+Руководство распространяется на тех же условиях, что и _DramaSystem SRD_ (лицензия _CC BY 3.0_). Это значит, что вы вольны использовать любые фрагменты документа для создания собственных продуктов на основе правил _DramaSystem_ — в том числе и коммерческих. При этом вы должны соблюсти два условия.
+
+- Указать оригинальную форму атрибуции _DramaSystem SRD_, представленную выше.
+- Указать меня как переводчика в своей работе: «_Перевод правил на русский язык: Александр Семыкин_»

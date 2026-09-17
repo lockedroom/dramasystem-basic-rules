@@ -1,0 +1,34 @@
+// «Сценарий» — распечатка на кремовой бумаге и красный карандаш редактора.
+// Схема светлая, за основу берётся light.
+
+$color-scheme: light;
+
+// Поверхности
+$body-background-color: #f5f1e8;
+$sidebar-color: #fbf8f1;
+$search-background-color: #fbf8f1;
+$table-background-color: #fbf8f1;
+$code-background-color: #ece5d8;
+$feedback-color: #ece5d8;
+
+// Текст. Тёплый графит вместо чистого чёрного — так страница ближе
+// к типографской печати, чем к экрану.
+$body-heading-color: #23201c;
+$body-text-color: #23201c;
+$nav-child-link-color: #6b625a;
+$search-result-preview-color: #6b625a;
+
+// Акценты. Красный карандаш: #b3261e на кремовом даёт 5.85:1, проходит AA
+// и для текста, и для ссылок, поэтому осветлять его не пришлось.
+$link-color: #b3261e;
+$btn-primary-color: #b3261e;
+$base-button-color: #ece5d8;
+$border-color: #ddd5c6;
+
+// Коллауты. Имена переменных от темы, оттенки свои:
+// NOTE — чернильная синь пометок на полях (7.55:1),
+// TIP — тот же красный карандаш, что и ссылки (5.85:1).
+$blue-000: #2f4f6f;
+$blue-300: #24405b;
+$green-000: #b3261e;
+$green-300: #8f1e17;
